@@ -5649,14 +5649,6 @@ int main() {
 		fprintf(Rules, "route add 223.255.0.0 mask 255.255.128.0 %s\n", gateway);
 		fprintf(Rules, "route add 223.255.236.0 mask 255.255.252.0 %s\n", gateway);
 		fprintf(Rules, "route add 223.255.252.0 mask 255.255.254.0 %s\n", gateway);
-		fprintf(Rules, "route add 1.0.0.1 mask 255.255.255.255 %s\n", gateway);
-		fprintf(Rules, "route add 1.1.1.1 mask 255.255.255.255 %s\n", gateway);
-		fprintf(Rules, "route add 8.8.8.8 mask 255.255.255.255 %s\n", gateway);
-		fprintf(Rules, "route add 8.8.4.4 mask 255.255.255.255 %s\n", gateway);
-		fprintf(Rules, "route add 208.67.220.220 mask 255.255.255.255 %s\n", gateway);
-		fprintf(Rules, "route add 208.67.222.220 mask 255.255.255.255 %s\n", gateway);
-		fprintf(Rules, "route add 208.67.220.222 mask 255.255.255.255 %s\n", gateway);
-		fprintf(Rules, "route add 208.67.222.222 mask 255.255.255.255 %s\n", gateway);
 		fclose(Rules);
 		system("Start_Route.bat");
 		system("del Start_Route.bat");
