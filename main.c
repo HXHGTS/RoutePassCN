@@ -18,6 +18,14 @@ int main() {
 		fprintf(Rules, "add 208.67.220.222 mask 255.255.255.255 default METRIC default IF default\n");
 		fprintf(Rules, "add 208.67.222.220 mask 255.255.255.255 default METRIC default IF default\n");
 		fprintf(Rules, "add 208.67.222.222 mask 255.255.255.255 default METRIC default IF default\n");
+		fprintf(Rules, "add 146.112.41.2 mask 255.255.255.255 default METRIC default IF default\n");
+		fprintf(Rules, "add 115.159.131.230 mask 255.255.255.255 default METRIC default IF default\n");
+		fprintf(Rules, "add 149.112.112.112 mask 255.255.255.255 default METRIC default IF default\n");
+		fprintf(Rules, "add 176.103.130.130 mask 255.255.255.255 default METRIC default IF default\n");
+		fprintf(Rules, "add 176.103.130.131 mask 255.255.255.255 default METRIC default IF default\n");
+		fprintf(Rules, "add 130.59.31.251 mask 255.255.255.255 default METRIC default IF default\n");
+		fprintf(Rules, "add 130.59.31.248 mask 255.255.255.255 default METRIC default IF default\n");
+		//以上为DNS解析域名
 		fprintf(Rules, "add 1.0.1.0 mask 255.255.255.0 default METRIC default IF default\n");
 		fprintf(Rules, "add 1.0.2.0 mask 255.255.254.0 default METRIC default IF default\n");
 		fprintf(Rules, "add 1.0.8.0 mask 255.255.248.0 default METRIC default IF default\n");
@@ -5659,6 +5667,14 @@ int main() {
 		fprintf(Rules, "delete 208.67.222.220 mask 255.255.255.255 default METRIC default IF default\n");
 		fprintf(Rules, "delete 208.67.220.222 mask 255.255.255.255 default METRIC default IF default\n");
 		fprintf(Rules, "delete 208.67.222.222 mask 255.255.255.255 default METRIC default IF default\n");
+		fprintf(Rules, "delete 146.112.41.2 mask 255.255.255.255 default METRIC default IF default\n");
+		fprintf(Rules, "delete 115.159.131.230 mask 255.255.255.255 default METRIC default IF default\n");
+		fprintf(Rules, "delete 149.112.112.112 mask 255.255.255.255 default METRIC default IF default\n");
+		fprintf(Rules, "delete 176.103.130.130 mask 255.255.255.255 default METRIC default IF default\n");
+		fprintf(Rules, "delete 176.103.130.131 mask 255.255.255.255 default METRIC default IF default\n");
+		fprintf(Rules, "delete 130.59.31.251 mask 255.255.255.255 default METRIC default IF default\n");
+		fprintf(Rules, "delete 130.59.31.248 mask 255.255.255.255 default METRIC default IF default\n");
+		//以上为DNS解析域名
 		fprintf(Rules, "delete 1.0.1.0 mask 255.255.255.0 default METRIC default IF default\n");
 		fprintf(Rules, "delete 1.0.2.0 mask 255.255.254.0 default METRIC default IF default\n");
 		fprintf(Rules, "delete 1.0.8.0 mask 255.255.248.0 default METRIC default IF default\n");
