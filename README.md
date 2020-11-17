@@ -5,4 +5,3 @@
 
 [cmroute.dll下载](https://lanzous.com/icxpbij)
 
-备注：本功能已集成于最新版DNS防污染中，如需单独使用，可下载此版本！
