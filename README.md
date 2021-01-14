@@ -1,7 +1,5 @@
 # ChangeVPNRoute
-修改Windows路由表，实现VPN类软件分流，需要cmroute.dll（类似游戏加速器）
 
-[64位下载](https://lanzous.com/icxpjmb) [32位下载](https://lanzous.com/icxpjnc)
+修改Windows路由表，实现VPN类软件分流(类似于游戏加速器)
 
-[cmroute.dll下载](https://lanzous.com/icxpbij)
-
+### 注意：该项目路由表部分未完工，使用时需要自行处理路由表格式问题！
