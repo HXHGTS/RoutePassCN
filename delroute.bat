@@ -48,5 +48,5 @@ cd /d %~dp0
 
 if '%1'=='ELEV' (del "%vbsGetPrivileges%" 1>nul 2>nul  &  shift /1)
 
-rundll32.exe cmroute.dll,SetRoutes /STATIC_FILE_NAME Close_Route.txt /DONT_REQUIRE_URL /IPHLPAPI_ACCESS_DENIED_OK
+rundll32.exe cmroute.dll,SetRoutes /STATIC_FILE_NAME delroute.txt /DONT_REQUIRE_URL /IPHLPAPI_ACCESS_DENIED_OK
 
