@@ -32,27 +32,27 @@ add 1.120.0.0 mask 255.248.0.0 default METRIC default IF default
 add 1.127.255.255 mask 255.255.255.255 default METRIC default IF default
 add 1.128.0.0 mask 255.224.0.0 default METRIC default IF default
 add 1.159.255.255 mask 255.255.255.255 default METRIC default IF default
-1.160.0.0255.240.0.0
-1.175.255.255255.255.255.255
-1.176.0.0255.252.0.0
-1.179.255.255255.255.255.255
-1.186.0.0255.254.0.0
-1.187.255.255255.255.255.255
-1.200.0.0255.254.0.0
-1.201.255.255255.255.255.255
-1.208.0.0255.240.0.0
-1.223.255.255255.255.255.255
-1.224.0.0255.224.0.0
-1.255.255.255255.255.255.255
-2.0.0.0254.0.0.0
-3.255.255.255255.255.255.255
-4.0.0.0252.0.0.0
-7.255.255.255255.255.255.255
-8.0.0.0254.0.0.0
-9.255.255.255255.255.255.255
-11.0.0.0255.0.0.0
-11.255.255.255255.255.255.255
-12.0.0.0254.0.0.0
+add 1.160.0.0 mask 255.240.0.0 default METRIC default IF default
+add 1.175.255.255 mask 255.255.255.255 default METRIC default IF default
+add 1.176.0.0 mask 255.252.0.0 default METRIC default IF default
+add 1.179.255.255 mask 255.255.255.255 default METRIC default IF default
+add 1.186.0.0 mask 255.254.0.0 default METRIC default IF default
+add 1.187.255.255 mask 255.255.255.255 default METRIC default IF default
+add 1.200.0.0 mask 255.254.0.0 default METRIC default IF default
+add 1.201.255.255 mask 255.255.255.255 default METRIC default IF default
+add 1.208.0.0 mask 255.240.0.0 default METRIC default IF default
+add 1.223.255.255 mask 255.255.255.255 default METRIC default IF default
+add 1.224.0.0 mask 255.224.0.0 default METRIC default IF default
+add 1.255.255.255 mask 255.255.255.255 default METRIC default IF default
+add 2.0.0.0 mask 254.0.0.0 default METRIC default IF default
+add 3.255.255.255 mask 255.255.255.255 default METRIC default IF default
+add 4.0.0.0 mask 252.0.0.0 default METRIC default IF default
+add 7.255.255.255 mask 255.255.255.255 default METRIC default IF default
+add 8.0.0.0 mask 254.0.0.0 default METRIC default IF default
+add 9.255.255.255 mask 255.255.255.255 default METRIC default IF default
+add 11.0.0.0 mask 255.0.0.0 default METRIC default IF default
+add 11.255.255.255 mask 255.255.255.255 default METRIC default IF default
+add 12.0.0.0 mask 254.0.0.0 default METRIC default IF default
 13.64.0.0255.255.0.0
 13.64.255.255255.255.255.255
 13.65.0.0255.255.0.0
