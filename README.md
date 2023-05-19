@@ -37,11 +37,11 @@ curl 'http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest' | grep -v '
 
 awk -v FS="|" '{printf("%s/%d\n", $4, 32-log($5)/log(2))}' /tmp/Routes6.txt > /tmp/Routes6.tmp
 
-echo 'set LOCALGW6=fe80::1' >  /tmp/AddRoute6.txt
+echo 'set LOCALGW6=fe80::1' >  /tmp/AddRoute6.bat
 
-cat /tmp/Routes6.tmp | sed 's/^/route add /' | sed 's/$/ %LOCALGW6%/' >> /tmp/AddRoute6.txt
+cat /tmp/Routes6.tmp | sed 's/^/route add /' | sed 's/$/ %LOCALGW6%/' >> /tmp/AddRoute6.bat
 
-cat /tmp/Routes6.tmp | sed 's/^/route delete /' > /tmp/DelRoute6.txt
+cat /tmp/Routes6.tmp | sed 's/^/route delete /' > /tmp/DelRoute6.bat
 
 rm -f /tmp/Routes.tmp /tmp/Routes.txt
 ```
