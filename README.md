@@ -9,6 +9,9 @@ curl 'http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest' | grep -v '
 
 awk -v FS="|" '{printf("%s/%d\n", $4, 32-log($5)/log(2))}' /tmp/Routes.txt > /tmp/Routes.tmp
 
+sed -i 's/\/10/ mask 255.192.0.0/' /tmp/Routes.tmp
+sed -i 's/\/11/ mask 255.224.0.0/' /tmp/Routes.tmp
+sed -i 's/\/12/ mask 255.240.0.0/' /tmp/Routes.tmp
 sed -i 's/\/13/ mask 255.248.0.0/' /tmp/Routes.tmp
 sed -i 's/\/14/ mask 255.252.0.0/' /tmp/Routes.tmp
 sed -i 's/\/15/ mask 255.254.0.0/' /tmp/Routes.tmp
