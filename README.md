@@ -10,5 +10,7 @@ awk -v FS="|" '{printf("%s/%d\n", $4, 32-log($5)/log(2))}' /tmp/Routes.txt > /tm
 
 cat /tmp/Routes.tmp | sed 's/^/add /' | sed 's/$/ default METRIC default IF default/' > /tmp/AddRoutes.txt
 
+cat /tmp/Routes.tmp | sed 's/^/delete /' | sed 's/$/ default METRIC default IF default/' > /tmp/DelRoutes.txt
+
 rm -f /tmp/Routes.tmp /tmp/Routes.txt
 ```
