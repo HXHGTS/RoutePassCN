@@ -25,9 +25,9 @@ sed -i 's/\/22/ mask 255.255.252.0/' /tmp/Routes.tmp
 sed -i 's/\/23/ mask 255.255.254.0/' /tmp/Routes.tmp
 sed -i 's/\/24/ mask 255.255.255.0/' /tmp/Routes.tmp
 
-cat /tmp/Routes.tmp | sed 's/^/add /' | sed 's/$/ default METRIC default IF default/' > /tmp/AddRoutes.txt
+cat /tmp/Routes.tmp | sed 's/^/add /' | sed 's/$/ default METRIC default IF default/' > /tmp/AddRoute.txt
 
-cat /tmp/Routes.tmp | sed 's/^/delete /' | sed 's/$/ default METRIC default IF default/' > /tmp/DelRoutes.txt
+cat /tmp/Routes.tmp | sed 's/^/delete /' | sed 's/$/ default METRIC default IF default/' > /tmp/DelRoute.txt
 
 rm -f /tmp/Routes.tmp /tmp/Routes.txt
 ```
