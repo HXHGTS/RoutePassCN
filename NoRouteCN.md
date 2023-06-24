@@ -36,5 +36,5 @@ cat /tmp/Routes6.tmp | sed 's/^/route add /' | sed 's/$/ %TUNGW6%/' >> /tmp/AddR
 
 cat /tmp/Routes6.tmp | sed 's/^/route delete /' > /tmp/DelRoute6.bat
 
-rm -f /tmp/Routes.tmp /tmp/Routes.txt
+rm -f /tmp/Routes6.tmp /tmp/Routes6.txt
 ```
